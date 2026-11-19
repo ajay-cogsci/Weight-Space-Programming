@@ -14,6 +14,16 @@ dependencies = [
 dev = [
     "pytest>=8",
 ]
+# exp9 runs the model on this machine instead of Modal
+local = [
+    "torch>=2.6",
+    "transformers>=4.56",
+    "safetensors",
+    "tokenizers",
+    "pandas",
+    "pyarrow",
+    "huggingface_hub",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
